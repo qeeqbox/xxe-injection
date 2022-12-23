@@ -7,6 +7,19 @@ A threat actor may interfere with an application's processing of extensible mark
 2. The target's XML processor replaces the external entity with the content dereferenced by the system identifier 
 
 ## Code
+#### Target Logic 
+```py
+...
+@app.route("/parse_xml",methods = ['POST'])
+def parse_xml():
+    parser = etree.XMLParser(resolve_entities=True)
+    root = etree.fromstring(request.files['xml'].read(), parser)
+    response = make_response(etree.tostring(root), 200)
+    response.mimetype = "text/plain"
+    return response
+...
+```
+
 #### Target-in
 ```
 <?xml version="1.0" encoding="UTF-8"?>
