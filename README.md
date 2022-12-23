@@ -1,9 +1,9 @@
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/xxe-injection/main/xxe-injection.png"></p>
 
-An adversary may interfere with an application's processing of extensible markup language (XML) data to view the content of a target's files
+A threat actor may interfere with an application's processing of extensible markup language (XML) data to view the content of a target's files
 
 ## Example #1
-1. Adversary sends a vulnerable target a malicious request that contains a reference to an external entity (a system identifier)
+1. Threat actor sends a vulnerable target a malicious request that contains a reference to an external entity (a system identifier)
 2. The target's XML processor replaces the external entity with the content dereferenced by the system identifier 
 
 ## Code
