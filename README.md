@@ -20,7 +20,7 @@ def parse_xml():
 ...
 ```
 
-#### Target-in
+#### Target-in (Safe)
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <getLastName>John01</getLastName>
@@ -31,8 +31,8 @@ def parse_xml():
 Jone Doe
 ```
 
-#### Target-in
-```
+#### Target-in (Malicious)
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE malicious [ <!ENTITY xxe SYSTEM "file:///etc/hostname"> ]>
 <getInfo>&xxe;</getInfo>
