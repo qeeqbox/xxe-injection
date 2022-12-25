@@ -31,7 +31,7 @@ def parse_xml():
 Jone Doe
 ```
 
-#### Target-in (Malicious)
+#### Target-in
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE malicious [ <!ENTITY xxe SYSTEM "file:///etc/hostname"> ]>
