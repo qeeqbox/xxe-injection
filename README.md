@@ -20,7 +20,7 @@ def parse_xml():
 ...
 ```
 
-#### Target-in (Safe)
+#### Target-in
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <getLastName>John01</getLastName>
