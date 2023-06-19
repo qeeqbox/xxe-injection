@@ -9,7 +9,6 @@ A threat actor may interfere with an application's processing of extensible mark
 ## Code
 #### Target Logic 
 ```py
-...
 @app.route("/parse_xml",methods = ['POST'])
 def parse_xml():
     parser = etree.XMLParser(resolve_entities=True)
@@ -17,7 +16,6 @@ def parse_xml():
     response = make_response(etree.tostring(root), 200)
     response.mimetype = "text/plain"
     return response
-...
 ```
 
 #### Target-in
